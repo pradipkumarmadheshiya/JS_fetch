@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     async function getCategoryData(){
     
+        container.innerHTML=""
         try{
             const response=await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
             const data=await response.json()
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 const getIngredientData=async ()=>{
 
+    container.innerHTML=""
     try{
         const response=await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast")
         const data=await response.json()
