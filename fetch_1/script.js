@@ -2,7 +2,7 @@ const container=document.getElementsByClassName("container")[0]
 const category=document.getElementById("category")
 const ingredient=document.getElementById("ingredient")
 
-                        getCategoryData
+                        // getCategoryData
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 box.className="box"        
                 const meal=document.createElement("p")
                 const mealThumb=document.createElement("img")
-                const mealId=document.createElement("p")
+                // const mealId=document.createElement("p")
         
                 meal.textContent=el.strMeal
                 mealThumb.src=el.strMealThumb
-                mealId.textContent="ID: "+el.idMeal
+                // mealId.textContent="ID: "+el.idMeal
                 
-                box.append(mealThumb, meal, mealId)
+                box.append(mealThumb, meal)
                 container.append(box)
             })
         }
@@ -55,13 +55,13 @@ const getIngredientData=async ()=>{
         box.className="box"
         const meal=document.createElement("p")
         const mealImg=document.createElement("img")
-        const mealId=document.createElement("p")
+        // const mealId=document.createElement("p")
 
         meal.textContent=el.strMeal
         mealImg.src=el.strMealThumb
-        mealId.textContent="ID: "+el.idMeal
+        // mealId.textContent="ID: "+el.idMeal
 
-        box.append(meal, mealImg, mealId)
+        box.append(meal, mealImg)
         container.append(box)
         })
     }
