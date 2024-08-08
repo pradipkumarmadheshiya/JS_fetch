@@ -2,6 +2,8 @@ const container=document.getElementsByClassName("container")[0]
 const category=document.getElementById("category")
 const ingredient=document.getElementById("ingredient")
 
+                        getCategoryData
+
 document.addEventListener("DOMContentLoaded", ()=>{
 
     async function getCategoryData(){
@@ -40,6 +42,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     category.addEventListener("click", getCategoryData)
 })
 
+                                        // getIngredientData
 
 const getIngredientData=async ()=>{
 
