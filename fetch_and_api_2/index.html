@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API 2</title>
+    <style>
+        #container{
+            padding: 40px 20px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+        #get_users{
+            border: 1px solid rgb(161, 161, 161);
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #get_users:hover{
+            background-color: white;
+        }
+        #users_box{
+            margin-top: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .box{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 8px;
+        }
+        .box img{
+            width: 100%;
+        }
+        .box p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="button">
+            <button id="get_users">Get Users</button>
+        </div>
+        <div id="users_box">
+
+        </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
