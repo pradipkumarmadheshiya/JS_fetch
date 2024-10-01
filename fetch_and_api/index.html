@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch & API</title>
+    <style>
+        #container{
+            padding: 40px 20px;
+        }
+        #cat_ing_button{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        #get_category, #get_ingredient{
+            border: 1px solid rgb(150, 150, 150);
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #get_category:hover{
+            background-color: white;
+        }
+        #get_ingredient:hover{
+            background-color: white;
+        }
+        .cat_ing_box{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .box{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 8px;
+        }
+        .imgDiv img{
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .itemName{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="cat_ing_button">
+            <input type="submit" value="Get Category" id="get_category">
+            <input type="submit" value="Get Ingredient" id="get_ingredient">
+        </div>
+        <div class="cat_ing_box">
+
+        </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
